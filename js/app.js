@@ -8,14 +8,19 @@ const cut=(k,alt)=>`<img src="img/cut/${k}-700.webp" srcset="img/cut/${k}-700.we
 const card=(id,extra='')=>{const p=P[id],[t,s]=nm(id);return `<a class="card rv" href="#project/${id}"><div class="cimg">${cut(p.img,t)}</div><h3>${esc(t)}</h3><p>${esc(s)}</p>${extra}</a>`};
 
 /* ---------- интро: логотип мягко появляется и уходит ---------- */
-const intro=$('#intro');
+const intro=$('#intro'),body=document.body,hv=$('#heroVideo');
 let seen=false;try{seen=sessionStorage.getItem('lv6_intro')==='1'}catch(e){}
-if(seen||matchMedia('(prefers-reduced-motion:reduce)').matches){intro.remove()}
+const reveal0=()=>body.classList.add('revealed');
+if(seen||matchMedia('(prefers-reduced-motion:reduce)').matches){intro.remove();requestAnimationFrame(reveal0)}
 else{
- requestAnimationFrame(()=>intro.classList.add('show'));
- setTimeout(()=>intro.classList.add('hide'),1500);
- setTimeout(()=>intro.classList.add('gone'),2000);
- setTimeout(()=>intro.remove(),2900);
+ body.classList.add('intro-on');hv.pause();
+ setTimeout(()=>intro.classList.add('show'),150);      // логотип проявляется
+ setTimeout(()=>intro.classList.add('hide'),2700);     // логотип растворяется
+ setTimeout(()=>{                                      // белый экран открывает видео
+  try{hv.currentTime=0}catch(e){}hv.play().catch(()=>{});
+  intro.classList.add('gone');body.classList.remove('intro-on');reveal0();
+ },3500);
+ setTimeout(()=>intro.remove(),5300);
  try{sessionStorage.setItem('lv6_intro','1')}catch(e){}
 }
 
@@ -156,7 +161,7 @@ function route(){
  }
  document.body.classList.toggle('is-home',v==='home');
  scrollTo(0,0);onScroll();reveal();
- const vid=$('#heroVideo');if(v==='home'){vid.play().catch(()=>{})}else vid.pause();
+ const vid=$('#heroVideo');if(v==='home'){if(!body.classList.contains('intro-on'))vid.play().catch(()=>{})}else vid.pause();
  $('#mnav').hidden=true;$('#burger').setAttribute('aria-expanded','false');
 }
 // какие фото реально есть в папке img/mz (без лишних запросов к несуществующим файлам)
