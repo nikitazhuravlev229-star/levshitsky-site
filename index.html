@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Levshitsky — ателье и техцентр</title>
+<meta name="description" content="Levshitsky: реставрация и тюнинг редких машин, покраска, салон и колёса в одном техцентре. Проекты, аукцион и заявка на проект.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/fira-sans-extra-condensed-cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<div class="intro" id="intro" aria-hidden="true"><img src="img/lockup-black.png" alt="" width="1210" height="435"></div>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="hdr" id="hdr">
+  <a href="#home" class="brand" aria-label="Levshitsky — на главную"><img src="img/logo-dark.png" alt="Levshitsky" width="1164" height="331"></a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="#projects" data-nav="projects">Проекты</a>
+    <a href="#techcenter" data-nav="techcenter">Техцентр</a>
+    <a href="#auction" data-nav="auction">Аукцион</a>
+    <a href="#config" data-nav="config">Конфигуратор</a>
+    <a href="#about" data-nav="about">Об ателье</a>
+  </nav>
+  <a href="#contact" class="btn sm hcta">Обсудить проект</a>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span class="sr">Меню</span></button>
+</header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+  <a href="#projects">Проекты</a><a href="#techcenter">Техцентр</a><a href="#auction">Аукцион</a><a href="#config">Конфигуратор</a><a href="#about">Об ателье</a><a href="#news">Журнал</a><a href="#contact">Связаться</a>
+</nav>
+
+<main id="main">
+
+<!-- ГЛАВНАЯ -->
+<section data-view="home" aria-label="Главная">
+  <div class="hero">
+    <video id="heroVideo" muted loop playsinline autoplay preload="auto" poster="video/hero.webp" aria-label="Видео: голубой BMW M2 в заносе на треке и на трассе"><source src="video/hero.mp4" type="video/mp4"></video>
+    <div class="hero-shade"></div>
+    <div class="hero-txt in">
+      <h1 class="hero-h">Ваша машина<br><em>в&nbsp;своём цвете</em></h1>
+      <p class="hero-p">Реставрация и&nbsp;тюнинг редких машин: кузов, лак, салон и&nbsp;колёса в&nbsp;одной гамме.</p>
+      <div class="hero-b"><a href="#contact" class="btn">Обсудить проект</a><a href="#projects" class="btn ghost w">Проекты</a></div>
+    </div>
+    <a href="#h-about" class="scroll" aria-label="Листать вниз"><span></span></a>
+  </div>
+
+  <section class="sec" aria-labelledby="h-about">
+    <div class="in split">
+      <div><p class="lbl">Об ателье</p><h2 class="h2" id="h-about">Ателье <em>редких машин</em></h2></div>
+      <div class="txt">
+        <p class="lead">Восстанавливаем машины, которых почти не&nbsp;осталось, и&nbsp;доводим новые до&nbsp;своего образа.</p>
+        <p>Кузов, цвет, салон и&nbsp;колёса делаем в&nbsp;одном техцентре. Образ собираем вокруг одного цвета: лак, диски, суппорты и&nbsp;строчка в&nbsp;салоне держатся в&nbsp;одной гамме.</p>
+        <a href="#about" class="lnk">Подробнее об&nbsp;ателье</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec feat-b" aria-labelledby="h-tc">
+    <div class="in">
+      <div class="head"><div><p class="lbl">01</p><h2 class="h2" id="h-tc">Техцентр</h2></div><div class="side"><p class="txt">Цех, покраска, салон, колёса и мойка в одном здании. Кофейня и тренажёрный зал на втором этаже.</p><a href="#techcenter" class="lnk">Смотреть техцентр</a></div></div>
+      <a href="#techcenter" class="bigl" data-gal="tc" data-i="0" aria-label="Открыть галерею техцентра"><figure class="big ph"><img src="img/mz/t01-1600.webp" srcset="img/mz/t01-800.webp 800w, img/mz/t01-1600.webp 1600w" sizes="(max-width:1400px) 100vw, 1360px" alt="Визуализация: главный зал техцентра Levshitsky" loading="lazy" decoding="async"></figure></a>
+    </div>
+  </section>
+  <section class="sec feat-b" aria-labelledby="h-salon">
+    <div class="in">
+      <div class="head"><div><p class="lbl">02</p><h2 class="h2" id="h-salon">Автосалон</h2></div><div class="side"><p class="txt">Готовые машины стоят под навесом у въезда. Их можно посмотреть вживую.</p><a href="#projects" class="lnk">Смотреть машины</a></div></div>
+      <a href="#techcenter" class="bigl" aria-label="Открыть галерею" data-gal="tc" data-i="1"><figure class="big ph"><img src="img/mz/t18-1600.webp" srcset="img/mz/t18-800.webp 800w, img/mz/t18-1600.webp 1600w" sizes="(max-width:1400px) 100vw, 1360px" alt="Визуализация: фасад техцентра и автосалон под навесом" loading="lazy" decoding="async"></figure></a>
+    </div>
+  </section>
+  <section class="sec feat-b" aria-labelledby="h-proj">
+    <div class="in">
+      <div class="head"><div><p class="lbl">03</p><h2 class="h2" id="h-proj">Наши проекты</h2></div><div class="side"><p class="txt">Редкие машины после реставрации и новые машины в одном цвете от кузова до салона.</p><a href="#projects" class="lnk">Все проекты</a></div></div>
+      <a href="#projects" class="bigl" aria-label="Все проекты"><figure class="big ph slides" id="projSlides"></figure></a>
+    </div>
+  </section>
+  <section class="sec feat-b" aria-labelledby="h-auc">
+    <div class="in">
+      <div class="head"><div><p class="lbl">04</p><h2 class="h2" id="h-auc">Аукцион</h2></div><div class="side"><p class="txt">Готовые проекты продаём через закрытые торги: проверка участников, осмотр до торгов, отчёт о состоянии.</p><a href="#auction" class="lnk">Как устроен аукцион</a></div></div>
+      <a href="#auction" class="bigl" aria-label="Аукцион"><figure class="big ph"><img src="img/mz/m07-1600.webp" srcset="img/mz/m07-800.webp 800w, img/mz/m07-1600.webp 1600w" sizes="(max-width:1400px) 100vw, 1360px" alt="Mercedes-Benz 560 SEL после реставрации" loading="lazy" decoding="async"></figure></a>
+    </div>
+  </section>
+  <section class="sec" aria-labelledby="h-disc">
+    <div class="in">
+      <div class="head"><div><p class="lbl">05</p><h2 class="h2" id="h-disc">Обсудить проект</h2></div><p class="txt narrow">Пять коротких вопросов. Ассистент ответит в&nbsp;течение нескольких минут, круглосуточно.</p></div>
+      <div data-form></div>
+    </div>
+  </section>
+</section>
+
+<!-- ПРОЕКТЫ -->
+<section data-view="projects" aria-labelledby="h-projects">
+  <section class="sec top"><div class="in">
+    <h1 class="h1" id="h-projects">Проекты</h1>
+    <p class="lead narrow">Редкие машины после реставрации и&nbsp;новые машины в&nbsp;одном цвете. Откройте проект, чтобы посмотреть все фотографии и&nbsp;состав работ.</p>
+    <div class="pgrid" id="allProjects"></div>
+  </div></section>
+</section>
+
+<!-- ПРОЕКТ -->
+<section data-view="project" aria-labelledby="pjTitle">
+  <section class="sec top"><div class="in">
+    <a href="#projects" class="back">Все проекты</a>
+    <div class="pj-head"><h1 class="h1" id="pjTitle"></h1><p class="lead" id="pjSub"></p></div>
+    <div class="pj-car"><img id="pjCut" alt=""></div>
+    <div class="split pj-info"><p class="lead" id="pjStory"></p><dl class="specs" id="pjSpecs"></dl></div>
+  </div></section>
+  <section class="sec" id="pjGalWrap"><div class="in"><div class="head"><h2 class="h2">Фотографии</h2></div><div class="slider" id="pjSl"></div><div class="pj-nav"><a id="pjPrev" class="pj-nb"></a><a href="#contact" class="btn">Обсудить похожий проект</a><a id="pjNext" class="pj-nb nx"></a></div></div></section>
+  <section class="sec"><div class="in"><div class="head"><h2 class="h2">Другие проекты</h2><a href="#projects" class="lnk">Все проекты</a></div><div class="pgrid" id="pjMore"></div></div></section>
+</section>
+
+<!-- ТЕХЦЕНТР -->
+<section data-view="techcenter" aria-labelledby="h-techcenter">
+  <section class="sec top"><div class="in">
+    <p class="lbl">Визуализация проекта</p>
+    <h1 class="h1" id="h-techcenter">Техцентр</h1>
+    <p class="lead narrow">Всё в&nbsp;одном здании: приёмка, подъёмники, ремонт, покраска, салон, колёса, мойка и&nbsp;детейлинг. Готовые машины стоят под навесом у&nbsp;въезда. На&nbsp;втором этаже кофейня и&nbsp;тренажёрный зал за&nbsp;стеклом.</p>
+    <div class="slider" id="tcSl"></div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><h2 class="h2">Как проходит проект</h2></div>
+    <ol class="steps" id="tcSteps"></ol>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><h2 class="h2">Что делаем</h2></div>
+    <ol class="svc" id="tcSvc"></ol>
+  </div></section>
+</section>
+
+<!-- АУКЦИОН -->
+<section data-view="auction" aria-labelledby="h-auction">
+  <section class="sec top"><div class="in">
+    <h1 class="h1" id="h-auction">Аукцион</h1>
+    <p class="lead narrow">Продаём готовые проекты через закрытые торги. Участвуют только проверенные покупатели. Каждую машину можно осмотреть до&nbsp;торгов.</p>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><h2 class="h2">Лоты</h2></div>
+    <div class="pgrid lots" id="lots"></div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><h2 class="h2">Как проходят торги</h2></div>
+    <ol class="steps five" id="aucSteps"></ol>
+  </div></section>
+  <section class="sec"><div class="in split">
+    <div><h2 class="h2">Правила</h2><p class="txt">Правила публикуем до&nbsp;начала торгов. Участник подтверждает, что прочитал их, при подаче заявки.</p></div>
+    <div class="acc" id="aucRules"></div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><div><p class="lbl">Участие</p><h2 class="h2">Заявка на&nbsp;участие</h2></div></div>
+    <div data-form data-preset="Аукцион"></div>
+  </div></section>
+</section>
+
+<!-- КОНФИГУРАТОР -->
+<section data-view="config" aria-labelledby="h-config">
+  <section class="sec top"><div class="in">
+    <h1 class="h1" id="h-config">Конфигуратор</h1>
+    <div class="soon">
+      <p class="lbl red">Скоро</p>
+      <p class="lead">Здесь будет конфигуратор: выберете машину, цвет кузова, диски и&nbsp;салон и&nbsp;увидите результат.</p>
+      <p class="txt">Пока собираем его, расскажите о&nbsp;своей машине в&nbsp;заявке. Подберём цвет и&nbsp;материалы вместе.</p>
+      <a href="#contact" class="btn">Обсудить проект</a>
+    </div>
+  </div></section>
+</section>
+
+<!-- ОБ АТЕЛЬЕ -->
+<section data-view="about" aria-labelledby="h-aboutp">
+  <section class="sec top"><div class="in">
+    <p class="lbl">Об ателье</p>
+    <h1 class="h1" id="h-aboutp">Levshitsky</h1>
+    <p class="lead about-lead">Ателье и&nbsp;техцентр, где редкие машины возвращают к&nbsp;жизни, а&nbsp;новые доводят до&nbsp;своего образа.</p>
+  </div></section>
+  <div class="in"><figure class="big ph about-ph"><img src="img/mz/t01-1600.webp" srcset="img/mz/t01-800.webp 800w, img/mz/t01-1600.webp 1600w" sizes="(max-width:1400px) 100vw, 1360px" alt="Визуализация: главный зал техцентра Levshitsky" loading="lazy"></figure></div>
+  <section class="sec"><div class="in split">
+    <h2 class="h2">С какими машинами работаем</h2>
+    <div class="txt big-txt"><p>Mercedes девяностых, классические Porsche и&nbsp;BMW, G-Class, Defender, редкие минивэны и&nbsp;новые спорткары. Находим живые экземпляры, восстанавливаем и&nbsp;собираем образ вокруг одного цвета.</p><p>Все работы идут в&nbsp;одном техцентре. Машина не&nbsp;ездит между подрядчиками, за&nbsp;результат отвечает одна команда.</p></div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <h2 class="h2 mb">Принципы</h2>
+    <div class="pr">
+      <div class="pr-i"><span class="num">01</span><div><h3 class="h3">Один цвет</h3><p class="txt">Кузов, диски, суппорты и&nbsp;салон в&nbsp;одной гамме. Акцент остаётся один.</p></div></div>
+      <div class="pr-i"><span class="num">02</span><div><h3 class="h3">Одна команда</h3><p class="txt">Кузов, покраска, салон и&nbsp;колёса делаем в&nbsp;одном месте.</p></div></div>
+      <div class="pr-i"><span class="num">03</span><div><h3 class="h3">Всё на&nbsp;виду</h3><p class="txt">Смета до&nbsp;начала работ, фото каждого этапа, отчёт при выдаче.</p></div></div>
+    </div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <h2 class="h2 mb">Как проходит проект</h2>
+    <ol class="steps" id="abSteps"></ol>
+  </div></section>
+  <section class="sec"><div class="in cta">
+    <h2 class="h2">Есть машина<br><em>для&nbsp;проекта?</em></h2>
+    <div><p class="lead">Расскажите о&nbsp;ней в&nbsp;заявке. Ассистент ответит в&nbsp;течение нескольких минут.</p><a href="#contact" class="btn">Обсудить проект</a></div>
+  </div></section>
+</section>
+
+<!-- ЖУРНАЛ -->
+<section data-view="news" aria-labelledby="h-news">
+  <section class="sec top"><div class="in">
+    <h1 class="h1" id="h-news">Журнал</h1>
+    <p class="lead narrow">Что происходит в&nbsp;цеху и&nbsp;где нас можно увидеть.</p>
+    <div class="ngrid" id="newsList"></div>
+  </div></section>
+</section>
+<section data-view="article" aria-labelledby="arTitle">
+  <section class="sec top"><div class="in art">
+    <a href="#news" class="back">Журнал</a>
+    <p class="lbl" id="arMeta"></p>
+    <h1 class="h1 sm" id="arTitle"></h1>
+    <figure class="ph"><img id="arImg" alt=""></figure>
+    <p class="lead" id="arLead"></p>
+    <div class="txt" id="arBody"></div>
+  </div></section>
+</section>
+
+<!-- СВЯЗАТЬСЯ -->
+<section data-view="contact" aria-labelledby="h-contact">
+  <section class="sec top"><div class="in">
+    <h1 class="h1" id="h-contact">Связаться</h1>
+    <p class="lead narrow">Ассистент Levshitsky отвечает 24/7: подскажет по&nbsp;работам, срокам и&nbsp;аукциону и&nbsp;передаст заявку мастеру.</p>
+    <div class="chat" id="chat" aria-label="Чат с ассистентом">
+      <div class="chat-h"><span class="dot"></span><b>Ассистент Levshitsky</b><span class="mute">онлайн, 24/7</span></div>
+      <div class="chat-b" id="chatBody" aria-live="polite"></div>
+      <div class="chat-q" id="chatQuick"></div>
+      <form class="chat-f" id="chatForm"><label class="sr" for="chatIn">Ваш вопрос</label><input id="chatIn" autocomplete="off" placeholder="Напишите вопрос"><button class="btn sm" type="submit">Отправить</button></form>
+    </div>
+  </div></section>
+  <section class="sec"><div class="in">
+    <div class="head"><h2 class="h2">Обсудить проект</h2></div>
+    <div data-form></div>
+  </div></section>
+</section>
+
+<!-- ПОЛИТИКА -->
+<section data-view="privacy" aria-labelledby="h-privacy">
+  <section class="sec top"><div class="in art">
+    <h1 class="h1 sm" id="h-privacy">Политика конфиденциальности</h1>
+    <div class="txt"><p>Мы используем данные из&nbsp;заявки только чтобы ответить вам и&nbsp;обсудить проект. Не&nbsp;передаём их&nbsp;третьим лицам и&nbsp;не&nbsp;используем для рассылок без вашего согласия.</p><p>Чтобы удалить свои данные, напишите об&nbsp;этом ассистенту в&nbsp;разделе «Связаться».</p></div>
+  </div></section>
+</section>
+
+<section data-view="notfound" aria-labelledby="h-404">
+  <section class="sec top"><div class="in"><h1 class="h1" id="h-404">Страница не&nbsp;найдена</h1><p><a href="#home" class="btn">На&nbsp;главную</a></p></div></section>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="in">
+    <div class="ftr-top">
+      <a href="#home" class="ftr-logo" aria-label="Levshitsky — на главную"><img src="img/logo-dark.png" alt="Levshitsky" width="1164" height="331" loading="lazy"></a>
+      <nav aria-label="Меню в подвале"><a href="#projects">Проекты</a><a href="#techcenter">Техцентр</a><a href="#auction">Аукцион</a><a href="#config">Конфигуратор</a><a href="#news">Журнал</a><a href="#about">Об ателье</a><a href="#contact">Связаться</a></nav>
+    </div>
+    <div class="ftr-bot"><span>© 2026</span><a href="#privacy">Политика конфиденциальности</a></div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Галерея">
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-x" id="lbX" type="button" aria-label="Закрыть">×</button>
+  <button class="lb-p" id="lbP" type="button" aria-label="Предыдущее фото">‹</button>
+  <button class="lb-n" id="lbN" type="button" aria-label="Следующее фото">›</button>
+  <span class="lb-c" id="lbC"></span>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
